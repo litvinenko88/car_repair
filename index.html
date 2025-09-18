@@ -7,49 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Ремонт рулевых реек и ГУР</h1>
-            <p class="subtitle">Ремонт и восстановление рулевых реек и насосов ГУР по заводской технологии! Более 10 лет работы в области ремонта и восстановления систем рулевого управления!</p>
-            
-            <div class="services">
-                <h2>Наши услуги</h2>
-                <ul>
-                    <li>Ремонт рулевых реек</li>
-                    <li>Замена насосов ГУР</li>
-                    <li>Ремонт рулевых редукторов</li>
-                    <li>Диагностика и ремонт подвески</li>
-                    <li>Кузовной ремонт</li>
-                </ul>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ремонт рулевых реек и ГУР</h1>
+                <p class="subtitle">Ремонт и восстановление рулевых реек и насосов ГУР по заводской технологии! Более 10 лет работы в области ремонта и восстановления систем рулевого управления!</p>
+                
+                <div class="services">
+                    <h2>Наши услуги</h2>
+                    <div class="services-grid">
+                        <div class="service-item">Ремонт рулевых реек</div>
+                        <div class="service-item">Замена насосов ГУР</div>
+                        <div class="service-item">Ремонт рулевых редукторов</div>
+                        <div class="service-item">Диагностика и ремонт подвески</div>
+                        <div class="service-item">Кузовной ремонт</div>
+                    </div>
+                </div>
 
-            <div class="cta-buttons">
-                <a href="tel:+79887474654" class="btn btn-call">Позвонить</a>
-                <a href="https://wa.me/79887474654" class="btn btn-whatsapp">WhatsApp</a>
-            </div>
+                <div class="cta-buttons">
+                    <a href="tel:+79887474654" class="btn btn-primary">📞 8-988-747-46-54</a>
+                    <a href="https://wa.me/79887474654" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
 
-            <p class="call-to-action">Звоните! Мы всегда рады помочь!</p>
+                <p class="call-text">Звоните! Мы всегда рады помочь!</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="map-section">
+    <section class="map-section">
         <div id="map"></div>
-    </div>
+    </section>
 
-    <div class="contact-cards">
-        <div class="card">
-            <h3>Адрес</h3>
-            <p>г. Ставрополь<br>ул. 4-я Промышленная 4а</p>
+    <section class="contacts">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Адрес</h3>
+                    <p>г. Ставрополь<br>ул. 4-я Промышленная 4а</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+79887474654">8-988-747-46-54</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">🕒</div>
+                    <h3>График работы</h3>
+                    <p>ПН-СБ 09:00 - 19:00</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Телефон</h3>
-            <p><a href="tel:+79887474654">8-988-747-46-54</a></p>
-        </div>
-        <div class="card">
-            <h3>График работы</h3>
-            <p>ПН-СБ 09:00 - 19:00</p>
-        </div>
-    </div>
+    </section>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c5bfbaa0-c71b-4913-a5e1-8e22a733a686&lang=ru_RU"></script>
     <script src="script.js"></script>
