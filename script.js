@@ -1,25 +1,24 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-        center: [45.0448, 41.9691],
+        center: [45.061643, 41.913127],
         zoom: 15,
         controls: ['zoomControl', 'fullscreenControl']
     });
 
-    ymaps.geocode('Ставрополь, 4-я Промышленная улица, 4а').then(function (res) {
-        var firstGeoObject = res.geoObjects.get(0);
-        var coords = firstGeoObject.geometry.getCoordinates();
+    var coords = [45.061643, 41.913127];
         
         var myPlacemark = new ymaps.Placemark(coords, {
-            balloonContent: '<div style="padding: 10px; font-family: Arial, sans-serif;"><strong style="color: #404040;">СТО - Ремонт рулевых реек</strong><br><br>📍 г. Ставрополь, ул. 4-я Промышленная 4а<br>📞 <a href="tel:+79887474654" style="color: #ffcc00; text-decoration: none;">8-988-747-46-54</a><br>🕒 ПН-СБ 09:00 - 19:00</div>'
+            balloonContent: '<div style="padding: 15px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; max-width: 300px;"><div style="background: #ffcc00; padding: 10px; border-radius: 8px; margin-bottom: 10px; text-align: center;"><strong style="color: #404040; font-size: 16px;">СТО - Ремонт рулевых реек</strong></div><div style="color: #404040; line-height: 1.5;"><div style="margin: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px;">📍</span><span>г. Ставрополь, ул. 4-я Промышленная 4а</span></div><div style="margin: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px;">📞</span><a href="tel:+79887473654" style="color: #404040; text-decoration: none; font-weight: 600;">8-988-747-36-54</a></div><div style="margin: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px;">🕒</span><span>ПН-СБ 09:00 - 19:00</span></div></div></div>',
+            hintContent: 'СТО - Ремонт рулевых реек и насосов ГУР'
         }, {
-            preset: 'islands#yellowDotIcon'
+            preset: 'islands#redAutoIcon',
+            iconColor: '#ffcc00'
         });
 
         myMap.geoObjects.add(myPlacemark);
         myMap.setCenter(coords, 16);
-    });
+        myPlacemark.balloon.open();
 
-    // Плавная анимация при загрузке
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
