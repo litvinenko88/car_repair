@@ -308,3 +308,118 @@ h1 {
         padding: 0 10px;
     }
 }
+
+.features {
+    padding: 60px 0;
+    background: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    background: #eee8f4;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #404040;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #404040;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.warranty {
+    padding: 60px 0;
+    background: #404040;
+    color: white;
+}
+
+.warranty-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.warranty h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.warranty p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.warranty-toggle {
+    background: #ffcc00;
+    color: #404040;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.warranty-toggle:hover {
+    background: #eee8f4;
+    transform: translateY(-2px);
+}
+
+.warranty-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0 20px;
+}
+
+.warranty-details.open {
+    max-height: 2000px;
+    padding: 20px;
+}
+
+.warranty-details h3 {
+    color: #ffcc00;
+    margin: 20px 0 15px;
+    font-size: 18px;
+}
+
+.warranty-details ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.warranty-details li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
